@@ -1,0 +1,82 @@
+- 👋 Hi, I’m @Emanuelcres
+- 👀 I’m interested in ...
+- 🌱 I’m currently learning ...
+- 💞️ I’m looking to collaborate on ...
+- 📫 How to reach me ...
+- 😄 Pronouns: ...
+- ⚡ Fun fact: ...
+
+<!---
+Emanuelcres/Emanuelcres is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+You can click the Preview link to take a look at your changes.
+--->
+INICIO
+
+    // Entradas: antigüedad en años y sueldo del trabajador
+
+    Leer antigüedad
+
+    Leer sueldo
+
+
+
+    // Inicializar variables de bono
+
+    Bono_antigüedad = 0
+
+    Bono_sueldo = 0
+
+
+
+    // Calcular bono por antigüedad
+
+    Si antigüedad > 2 Y antigüedad < 5 Entonces
+
+        Bono_antigüedad = sueldo * 0.20
+
+    Sino Si antigüedad >= 5 Entonces
+
+        Bono_antigüedad = sueldo * 0.30
+
+    FinSi
+
+
+
+    // Calcular bono por sueldo
+
+    Si sueldo < 1000 Entonces
+
+        Bono_sueldo = sueldo * 0.25
+
+    Sino Si sueldo > 1000 Y sueldo <= 3500 Entonces
+
+        Bono_sueldo = sueldo * 0.15
+
+    Sino Si sueldo > 3500 Entonces
+
+        Bono_sueldo = sueldo * 0.10
+
+    FinSi
+
+
+
+    // Comparar los dos bonos y asignar el mayor
+
+    Si Bono_antigüedad > Bono_sueldo Entonces
+
+        Bono_final = Bono_antigüedad
+
+    Sino
+
+        Bono_final = Bono_sueldo
+
+    FinSi
+
+
+
+    // Mostrar el bono final
+
+    Escribir “El bono asignado es:”, Bono_final
+
+FIN
+
